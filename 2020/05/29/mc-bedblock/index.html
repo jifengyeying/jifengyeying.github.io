@@ -1,0 +1,64 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="yokn"><title>mc如何开服(资源教程集合) · yokn的异次元空间</title><meta name="description" content="mc如何开服(资源教程集合)# 联机教程(JAVA)https://m.bilibili.com/video/BV1tj411f7Yu
+https://b23.tv/BV1SK4y1r7GS
+
+sakurafrp - 内网穿透服务
+
+# 服务器教程首先你得先购买一个服务器
+可以是你自己的电脑（参见联"><meta name="keywords" content="keywords"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 4.2.1"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">yokn的异次元空间</a></h3><div class="description"><p>不要屈服于困难。<br>热爱生活，热爱学习。</p></div></div></div><ul class="social-links"><li><a href="https://github.com/jifengyeying/" target="_blank" rel="noopener"><i class="fa fa-github"></i></a></li><li><a href="mailto:1290525416@qq.com"><i class="fa fa-envelope"></i></a></li><li><a href="http://sighttp.qq.com/authd?IDKEY=1290525416" target="_blank" rel="noopener"><i class="fa fa-qq"></i></a></li></ul><div class="footer"><div class="p"> <span>© 2020 - 2021 </span><i class="fa fa-star"></i><span> yokn</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/mrcore/hexo-theme-Anatole-Core" target="_blank">Anatole-Core  </a></div><div class="beian"><a href="http://www.beian.miit.gov.cn/" target="_blank"></a><span style="height:10px;margin-left: 10px;">|</span><img src="https://qn.jixian.io/gongan.png" style="height:10px;margin-left: 10px;position: relative;top: 1px;"><span style="margin-left: 2px;"></span></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/tags">标签</a></li><li><a href="/about">关于</a></li><li><a href="/guestbook">留言</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>mc如何开服(资源教程集合)</a></h3></div><div class="post-content"><h2 id="mc如何开服-资源教程集合"><a href="#mc如何开服-资源教程集合" class="headerlink" title="mc如何开服(资源教程集合)"></a>mc如何开服(资源教程集合)</h2><h3 id="联机教程-JAVA"><a href="#联机教程-JAVA" class="headerlink" title="# 联机教程(JAVA)"></a># 联机教程(JAVA)</h3><p><a href="https://m.bilibili.com/video/BV1tj411f7Yu" target="_blank" rel="noopener">https://m.bilibili.com/video/BV1tj411f7Yu</a></p>
+<p><a href="https://b23.tv/BV1SK4y1r7GS" target="_blank" rel="noopener">https://b23.tv/BV1SK4y1r7GS</a></p>
+<blockquote>
+<p><a href="https://www.natfrp.com/" target="_blank" rel="noopener">sakurafrp</a> - 内网穿透服务</p>
+</blockquote>
+<h3 id="服务器教程"><a href="#服务器教程" class="headerlink" title="# 服务器教程"></a># 服务器教程</h3><p>首先你得先购买一个服务器</p>
+<p>可以是你自己的电脑（参见联机教程，学会内网穿透再来），或者是云服务器，这里我选择了<a href="https://promotion.aliyun.com/ntms/act/campus2018.html" target="_blank" rel="noopener">阿里云学生机</a>的轻量级服务器，腾讯云等等大同小异，系统选择Ubuntu18.04。</p>
+<p>获得服务器的ip地址后（自己电脑方案的是公网ip，直接跳过ssh）</p>
+<p>ssh - 下载<a href="http://www.putty.be/latest.html" target="_blank" rel="noopener">putty</a>和<a href="https://winscp.net/eng/download.php" target="_blank" rel="noopener">winSCP</a>，方便管理，安装完打开putty，在Host Name里输入ip地址，点击open，提示login as: 输入用户名（阿里云为root），然后输入密码（购买时设置，密码不显示，不用担心）</p>
+<p><code>mkdir mc</code> - 创建名字为mc的文件夹</p>
+<p><code>cd mc</code> - 打开文件夹mc</p>
+<p><code>apt install screen</code> - 安装screen</p>
+<p><code>apt install aria2</code> - 安装aria2</p>
+<p><code>apt install vim</code> - 安装vim</p>
+<h4 id="Java版（插件服）"><a href="#Java版（插件服）" class="headerlink" title="Java版（插件服）"></a>Java版（插件服）</h4><p>首先是服务器核心，这里推荐使用<a href="https://papermc.io/downloads" target="_blank" rel="noopener">Paper</a>，下载jar，默认最新版，其他版本请点击legacy</p>
+<blockquote>
+<p>如果你想要使用其他的插件服核心或者mod服核心，你可以在<a href="https://yivesmirror.com/downloads/paper" target="_blank" rel="noopener">Yive’s Mirror</a>找到其他的。</p>
+</blockquote>
+<p>点击最新的build，复制下载链接，回到服务器，输入</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">aria2c 改为你下载的链接</span><br></pre></td></tr></table></figure>
+
+<p>下载完成后，制作启动脚本</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim start.sh</span><br></pre></td></tr></table></figure>
+
+<p>start.sh内容</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -Xmx最大内存 -Xms最小内存 -jar 你下载的jar名称.jar</span><br></pre></td></tr></table></figure>
+
+<p>（如<code>java -Xmx4G -Xms1024M -jar paper-135.jar</code>）</p>
+<p><code>sh start.sh</code> - 启动服务器</p>
+<p>然后后生成一堆文件，找到 <code>eula.txt</code> ，输入<code>vim eula.txt</code>，将里面的elua=false改为elua=true</p>
+<p>根据需要编辑 <code>server.properties</code> 这个百度</p>
+<p><code>sh start.sh</code> - 重启服务器</p>
+<p>但是这个时候你只要关闭ssh窗口服务器将关闭，这时就得用screen了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">screen -S 窗口名（随便）</span><br><span class="line">sh start.sh</span><br><span class="line">按下CTRL+a+d</span><br></pre></td></tr></table></figure>
+
+<p>关闭窗口，成功，享受服务器吧（重新进入screen请输入<code>screen -r 窗口名</code>）</p>
+<h4 id="基岩版（原版生存）"><a href="#基岩版（原版生存）" class="headerlink" title="基岩版（原版生存）"></a>基岩版（原版生存）</h4><p><code>apt install unzip</code> - 安装unzip</p>
+<p>首先肯定是官方的bds:<a href="https://www.minecraft.net/zh-hans/download/server/bedrock" target="_blank" rel="noopener">https://www.minecraft.net/zh-hans/download/server/bedrock</a></p>
+<p>选择Ubuntu，点击接受用户协议，复制下载链接，存那个文件夹自己建，在服务器输入指令 <code>aria2c 链接</code> 下载</p>
+<p>下载完成后输入 <code>unzip zip文件名</code></p>
+<p>根据需要编辑 <code>server.properties</code> ，自行百度</p>
+<p>建立一个启动文件 <code>vim start.sh</code></p>
+<p>输入<code>LD_LIBRARY_PATH=. ./bedrock_server</code></p>
+<p>然后 <code>screen -S 窗口名（随便）</code> ，输入 <code>sh start.sh</code> 启动服务器，<code>CTRL+a+d</code> ，然后关闭窗口</p>
+<p>进入服务器！（重新进入screen请输入<code>screen -r 窗口名</code>）</p>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2020-05-29</span><i class="fa fa-tag"></i><a class="tag" href="/tags/mc/" title="mc">mc </a><span class="leancloud_visitors"></span></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="" onclick="javascript:join_favorite()" ref="sidebar"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" href="http://twitter.com/home?status=,http://yoursite.com/2020/05/29/mc-bedblock/,yokn的异次元空间,mc如何开服(资源教程集合),;" target="_blank" rel="noopener"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2020/05/29/raspberry-1/" title="树莓派折腾篇(一)久违的开始">上一篇</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2020/03/23/HelloWorld/" title="Hello World!">下一篇</a></li></ul></div><script src="/js/visitors.js"></script><a id="comments"></a><div id="vcomments" style="margin:0 30px;"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//cdn.jsdelivr.net/gh/xcss/valine@latest/dist/Valine.min.js"></script><script>var valine = new Valine({
+  el:'#vcomments',
+  notify:false || false, 
+  verify:false|| false, 
+  app_id:'',
+  app_key:'',
+  placeholder:'念念不忘，必有回响',
+  path: window.location.pathname,
+  serverURLs: '',
+  visitor:true,
+  recordIP:true,
+  avatar:'yokn'
+})</script></div></div></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script><script src="/js/baidu-tongji.js"></script></body></html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="yokn"><title>树莓派折腾篇(一)久违的开始 · yokn的异次元空间</title><meta name="description" content="先弱弱地吐槽一句，我的博客不小心删了，只找到远古备份，好不容易才回来…
+这个故事告诉我们，备份！备份！备份！
+
+get到树莓派我选择的是树莓派4b2g ，因为我觉得4g的太贵了，性价比不高（没有国产pi高），而2g经过官方降价后价格还不错，又因为树莓派背后又丰富的社区资源以及它比较稳定（要不早就买国"><meta name="keywords" content="keywords"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/blog_basic.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><script src="/js/jquery.js"></script><meta name="generator" content="Hexo 4.2.1"></head><body><div class="sidebar animated fadeInDown"><div class="logo-title"><div class="title"><img src="/images/logo@2x.png" style="width:127px;"><h3 title=""><a href="/">yokn的异次元空间</a></h3><div class="description"><p>不要屈服于困难。<br>热爱生活，热爱学习。</p></div></div></div><ul class="social-links"><li><a href="https://github.com/jifengyeying/" target="_blank" rel="noopener"><i class="fa fa-github"></i></a></li><li><a href="mailto:1290525416@qq.com"><i class="fa fa-envelope"></i></a></li><li><a href="http://sighttp.qq.com/authd?IDKEY=1290525416" target="_blank" rel="noopener"><i class="fa fa-qq"></i></a></li></ul><div class="footer"><div class="p"> <span>© 2020 - 2021 </span><i class="fa fa-star"></i><span> yokn</span></div><div class="by_farbox"><span>Powered by </span><a href="https://hexo.io/zh-cn/" target="_blank">Hexo </a><span> & </span><a href="https://github.com/mrcore/hexo-theme-Anatole-Core" target="_blank">Anatole-Core  </a></div><div class="beian"><a href="http://www.beian.miit.gov.cn/" target="_blank"></a><span style="height:10px;margin-left: 10px;">|</span><img src="https://qn.jixian.io/gongan.png" style="height:10px;margin-left: 10px;position: relative;top: 1px;"><span style="margin-left: 2px;"></span></div></div></div><div class="main"><div class="page-top animated fadeInDown"><div class="nav"><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/tags">标签</a></li><li><a href="/about">关于</a></li><li><a href="/guestbook">留言</a></li></div><div class="information"><div class="back_btn"><li><a class="fa fa-chevron-left" onclick="window.history.go(-1)"> </a></li></div></div></div><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post animated fadeInDown"><div class="post-title"><h3><a>树莓派折腾篇(一)久违的开始</a></h3></div><div class="post-content"><blockquote>
+<p>先弱弱地吐槽一句，我的博客不小心删了，只找到远古备份，好不容易才回来…</p>
+<p>这个故事告诉我们，备份！备份！备份！</p>
+</blockquote>
+<h3 id="get到树莓派"><a href="#get到树莓派" class="headerlink" title="get到树莓派"></a>get到树莓派</h3><p>我选择的是<code>树莓派4b2g</code> ，因为我觉得4g的太贵了，性价比不高（没有国产pi高），而2g经过官方降价后价格还不错，又因为树莓派背后又丰富的社区资源以及它比较稳定（要不早就买国产派了），就买来写写python和练练linux</p>
+<blockquote>
+<p>才买不久就有8g的了… 有点贵，算了，再等等，等树莓派5… 更贵了，算了，再等等，等树莓派6…  算了…不买了（#滑稽h）</p>
+</blockquote>
+<p>— 购物清单 —</p>
+<p>++++++++++++++++++++++++</p>
+<p>树莓派2g                                x1</p>
+<p>树莓派外壳（带风扇）         x1</p>
+<p>树莓派散热片包                    x1</p>
+<p>hdmi转micro-usb转接线     x1</p>
+<p>usb读卡器2.0                        x1</p>
+<p>usb转tape-c转接线              x1</p>
+<p>键鼠（可选）                        x1</p>
+<p>充电线/充电宝(5v3a)            x1</p>
+<p>摄像头(其实没什么必要)       x1</p>
+<p>++++++++++++++++++++++++</p>
+<h4 id="工具打包"><a href="#工具打包" class="headerlink" title="工具打包"></a>工具打包</h4><p><a href="https://yokn.lanzous.com/id4lita" target="_blank" rel="noopener">工具打包</a>    <a href="https://shumeipai.nxez.com/download#tools" target="_blank" rel="noopener">介绍</a></p>
+<h3 id="安装系统"><a href="#安装系统" class="headerlink" title="安装系统"></a>安装系统</h3><p>破费之后，终于开始折腾了…</p>
+<p>树莓派可以安装各种系统，推荐如下</p>
+<blockquote>
+<p>想要把树莓派当微型主机的朋友请不要安装lite版或者core版！不要问我为什么，从5月16日买到现在才出文章，也不知道掉过多少坑。新手也推荐不要使用lite版</p>
+</blockquote>
+<p>新手    Raspbian，RISC</p>
+<p>媒体中心    LibreELEC，OSMC，Kodi</p>
+<p>物联网    Windows IoT Core</p>
+<p>游戏机    PetroPie，Lakka</p>
+<p>儿童    Kano OS</p>
+<p>开源桌面    Ubuntu</p>
+<p>推荐(4b)    Raspbian，Ubuntu（个人看法）</p>
+<blockquote>
+<p> <a href="https://shumeipai.nxez.com/download#tools" target="_blank" rel="noopener">一些介绍</a></p>
+</blockquote>
+<h3 id="备份"><a href="#备份" class="headerlink" title="备份"></a>备份</h3><blockquote>
+<p>参考文章—   <a href="https://blog.csdn.net/zhshh123/article/details/85063916" target="_blank" rel="noopener">https://blog.csdn.net/zhshh123/article/details/85063916</a></p>
+<p>为了不走丢，备份一下网页[滑稽]</p>
+</blockquote>
+<p>别问我为什么一开始就是备份，艰辛的路程在等着你，忘记备份的话一不小心就…</p>
+<p>全卡备份</p>
+<p>最简单的方式，但是提取后内存占用和内存卡一样大（慎用）</p>
+<p>压缩备份</p>
+<p>脚本（备份，感谢大佬，侵删）</p>
+<p><a href="https://yokn.lanzous.com/id4mmgh" target="_blank" rel="noopener">https://yokn.lanzous.com/id4mmgh</a></p>
+<p>脚本运行出错?<code>vim 脚本名称</code>，输入<code>:</code>进入命令模式，输入<code>:set ff</code>可以看到脚本格式，在windows编辑的话回事[dos]，这将使得linux无法识别一些字符，输入<code>:set ff=unix</code>即可解决，然后输入<code>:wq</code>保存并退出，输入<code>sh backup.sh</code>或者<code>./backup.sh</code>即可运行。</p>
+<blockquote>
+<p>注:脚本已改</p>
+</blockquote>
+<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><p><code>sudo raspi-config</code>    配置</p>
+<p><code>sudo shutdown -h now</code>    关机</p>
+<p><code>sudo shutdown -r now</code>或者<code>sudo reboot</code>    重启</p>
+<p><code>cd 文件目录</code>    打开文件目录</p>
+<p><code>ls</code>    列出目录下的所有文件及文件夹</p>
+<p><code>cat 文件</code>    读取文件内容</p>
+<p><code>rm (-rf)+文件夹(目录)</code>    删除文件夹或者目录(-rf)</p>
+<p><code>mkdir 文件夹</code>    新建文件夹</p>
+<p><code>cp 文件 目标文件(文件夹)</code>    复制文件到哪里</p>
+<blockquote>
+<p><code>cp a.txt /b.txt</code>    把a.txt移动到根目录并重命名为b.txt</p>
+<p><code>cp a.txt /test</code>    把a.txt移动到test文件夹(前提是有test这个文件，要不会变成根目录的test文件)</p>
+</blockquote>
+<p><code>mv 文件 目标文件(文件夹)</code>    移动文件到哪里(同上)</p>
+<h3 id="网站推荐"><a href="#网站推荐" class="headerlink" title="网站推荐"></a>网站推荐</h3><p><a href="https://shumeipai.nxez.com/" target="_blank" rel="noopener">树莓派实验室</a></p>
+</div><div class="post-footer"><div class="meta"><div class="info"><i class="fa fa-sun-o"></i><span class="date">2020-05-29</span><i class="fa fa-tag"></i><a class="tag" href="/tags/树莓派/" title="树莓派">树莓派 </a><span class="leancloud_visitors"></span></div></div></div></div><div class="share"><div class="evernote"><a class="fa fa-bookmark" href="" onclick="javascript:join_favorite()" ref="sidebar"></a></div><div class="weibo"><a class="fa fa-weibo" href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"></a></div><div class="twitter"><a class="fa fa-twitter" href="http://twitter.com/home?status=,http://yoursite.com/2020/05/29/raspberry-1/,yokn的异次元空间,树莓派折腾篇(一)久违的开始,;" target="_blank" rel="noopener"></a></div></div><div class="pagination"><ul class="clearfix"><li class="pre pagbuttons"><a class="btn" role="navigation" href="/2020/08/07/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/" title="windows软件推荐">上一篇</a></li><li class="next pagbuttons"><a class="btn" role="navigation" href="/2020/05/29/mc-bedblock/" title="mc如何开服(资源教程集合)">下一篇</a></li></ul></div><script src="/js/visitors.js"></script><a id="comments"></a><div id="vcomments" style="margin:0 30px;"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//cdn.jsdelivr.net/gh/xcss/valine@latest/dist/Valine.min.js"></script><script>var valine = new Valine({
+  el:'#vcomments',
+  notify:false || false, 
+  verify:false|| false, 
+  app_id:'',
+  app_key:'',
+  placeholder:'念念不忘，必有回响',
+  path: window.location.pathname,
+  serverURLs: '',
+  visitor:true,
+  recordIP:true,
+  avatar:'yokn'
+})</script></div></div></div></div><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/add-bookmark.js"></script><script src="/js/baidu-tongji.js"></script></body></html>
